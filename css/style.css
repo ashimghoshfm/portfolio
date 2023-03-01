@@ -1,0 +1,326 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* menu bar start */
+
+.navbar{
+    background-color: blue;
+}
+.nav-link{
+    color: white;
+    font-size:1.1rem;
+    font-weight:700;
+    cursor:pointer;
+    text-decoration: none;
+}
+.nav-link:hover{
+    background-color: black;
+    color:white;
+}
+.navbar-brand{
+    font-size: 2rem;
+    color: white;
+}
+.navbar-brand:hover{
+    color: #2be293;
+}
+/* menu bar close */
+
+
+/* main section start */
+.main{
+    background-color: #e2f5ff;
+}
+.main img{
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.main h3{
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px solid blue;
+    width: 63%;
+}
+
+.main .bt1{
+    height: 55px;
+    width: 135px;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.main .bt1:hover{
+    background-color: darkblue;
+    transition: 0.5s;
+}
+
+.main .bt2{
+    height: 55px;
+    width: 135px;
+    color: blue;
+    background-color: transparent;
+    font-weight: bold;
+    border: 2px solid blue;
+    border-radius: 5px;
+    outline: none;
+}
+.main .bt2:hover{
+    color: white;
+    background-color: darkblue;
+    transition: 0.5s;
+}
+/* main section close */
+
+/* About section start */
+.about{
+    background-color: rgb(235, 248, 204);
+}
+.about img{
+    box-shadow: -8px 13px 26px -11px rgba(0,0,0,0.57);
+}
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.progress{
+    background-color: rgb(199, 202, 205);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 30px;
+    width: 100%;
+}
+.pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: rgb(19, 41, 129);
+    height: 30px;
+    width: 0;
+}
+.progress p{
+    color: white;
+    padding: 15px;
+}
+@keyframes load1 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:90%;
+    }
+}
+.pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: rgb(19, 41, 129);
+    height: 30px;
+    width: 0;
+}
+.progress p{
+    color: white;
+    padding: 15px;
+}
+@keyframes load2 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:75%;
+    }
+}
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: rgb(19, 41, 129);
+    height: 30px;
+    width: 0;
+}
+.progress p{
+    color: white;
+    padding: 15px;
+}
+@keyframes load3 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:25%;
+    }
+}
+.pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: rgb(19, 41, 129);
+    height: 30px;
+    width: 0;
+}
+.progress p{
+    color: white;
+    padding: 15px;
+}
+@keyframes load4 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:55%;
+    }
+}
+
+.bt1{
+    height: 45px;
+    width: 140px;
+    background-color: blue;
+    border: 2px solid blue;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    outline:none;
+}
+.bt2{
+    height: 45px;
+    width: 140px;
+    background-color: transparent;
+    font-weight: bold;
+    border: 2px solid blue;
+    border-radius: 20px;
+    color: blue;
+}
+.bt1:hover{
+    background-color: darkblue;
+    color: white;
+}
+.bt2:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+
+/* services start */
+.card{
+    border: none;
+    border-radius: 5%;
+    outline: none;
+    box-shadow: -8px 13px 26px -11px rgba(0,0,0,0.57);
+}
+.card p{
+    color: gray;
+}
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: lightgray;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.card:hover .circle{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+/* portfolio css start */
+.portfolio{
+    background-color: rgb(214, 252, 214);
+}
+.control ul li{
+    list-style: none;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 6%;
+    color: white;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.item{
+    position: relative;
+}
+.item:hover{
+    box-shadow: -8px 13px 26px -11px rgba(0,0,0,0.57);
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.item span{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    opacity: 0;
+}
+.item:hover span{
+    opacity: 1;
+    transition: 0.5s;
+}
+.item:before{
+    content: "";
+    /* left: 0; */
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(145, 216, 216, 0.5);
+    opacity: 0;
+    position: absolute;
+}
+.item:hover:before{
+    opacity: 1;
+    transition:0.5s;
+}
+
+.circle:hover{
+    background-color: black;
+    color:white;
+    transition: 0.5s;
+}
+
+
+
+/* contact style */
+.contact .btn3{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 4px;
+}
+.btn3:hover{
+    background: white;
+    border: 1px solid black;
+    color: black;
+    transition: 0.4s;
+}
+
+/* footer */
+footer{
+    background-color: rgb(54, 47, 47);
+    color: lightgray;
+}
+
+
